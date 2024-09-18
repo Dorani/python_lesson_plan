@@ -93,7 +93,7 @@ class LinkedList:
     
     # Method to insert a node at a specific index
     def insert(self, index, value):
-        if index < 0 or index >= self.length:  # Return False if the index is out of bounds
+        if index < 0 or index > self.length:  # Return False if the index is out of bounds
             return False
         if index == 0:          # If inserting at the beginning, prepend the value
             return self.prepend(value)
@@ -123,16 +123,18 @@ class LinkedList:
     
     # Method to reverse the entire linked list
     def reverser(self):
-        temp = self.head        # Start from the head of the list
-        self.head = self.tail   # Swap the head and the tail
-        self.tail = temp
-        after = temp.next       # Keep track of the next node in the list
-        before = None           # Initialize a pointer for the previous node (none at first)
-        for _ in range(self.length):  # Traverse the list
-            after = temp.next   # Move to the next node
-            temp.next = before  # Reverse the link of the current node
-            before = temp       # Move the before pointer forward
-            temp = after        # Move the temp pointer forward to the next node
+        temp = self.head  # Start with the current head
+        self.head = self.tail  # Swap head and tail
+        self.tail = temp  # Now, the old head is the new tail
+        
+        after = temp.next  # Save the reference to the next node
+        before = None  # Initialize 'before' to None (new tail's next should be None)
+        
+        while temp:  # Iterate through the list until 'temp' becomes None
+            after = temp.next  # Keep track of the next node
+            temp.next = before  # Reverse the link
+            before = temp  # Move 'before' to the current node
+            temp = after  # Move 'temp' to the next node
 
 
 # Instantiate the LinkedList class with a starting value

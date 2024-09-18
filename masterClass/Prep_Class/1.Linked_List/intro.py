@@ -49,8 +49,9 @@ class LinkedList:
         if self.head is None:
             self.head = new_node
             self.tail = new_node
-        new_node.next = self.head
-        self.head = new_node
+        else:
+            new_node.next = self.head
+            self.head = new_node
         self.length += 1
         return True
     
@@ -81,7 +82,7 @@ class LinkedList:
         return False
     
     def insert(self, index, value):
-        if index < 0 or index >= self.length:
+        if index < 0 or index > self.length:
             return False
         if index == 0:
             return self.prepend(value)
