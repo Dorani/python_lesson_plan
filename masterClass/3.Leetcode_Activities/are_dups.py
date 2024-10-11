@@ -58,3 +58,7 @@ def containsDuplicate(nums):
         left += 1
         right += 1
     return False
+
+print(containsDuplicate([1,2,3,4,5]))// False
+print(containsDuplicate([1,2,2,4,5]))// True
+print(containsDuplicate([1,2,3,4,5,5]))// True
