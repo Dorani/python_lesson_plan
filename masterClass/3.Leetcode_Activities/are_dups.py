@@ -40,9 +40,9 @@ print(containsDuplicate([1,2,3,4,5]))
 def containsDuplicate(self, nums: List[int]) -> bool:
         return len(set(nums)) < len(nums)
 # Example usage
-print(are_dups(1, 2, 3))  # Should print False
-print(are_dups(1, 2, 2))  # Should print True
-print(are_dups('a', 'b', 'c', 'a'))  # Should print True
+print(containsDuplicate(1, 2, 3))  # Should print False
+print(containsDuplicate(1, 2, 2))  # Should print True
+print(containsDuplicate('a', 'b', 'c', 'a'))  # Should print True
 
 
 
