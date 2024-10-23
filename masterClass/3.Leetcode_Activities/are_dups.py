@@ -37,7 +37,7 @@ print(containsDuplicate([1,2,3,4,5]))
 
 
 
-def containsDuplicate(self, nums: List[int]) -> bool:
+def containsDuplicate (nums) -> bool:
         return len(set(nums)) < len(nums)
 # Example usage
 print(containsDuplicate(1, 2, 3))  # Should print False
