@@ -20,3 +20,7 @@ def isAnagram(s: str, t: str):
     
 # Example usage
 print(isAnagram('anagram', 'nagaram'))  # Should print True
+print(isAnagram('rat', 'car'))  # Should print False
+print(isAnagram('a', 'ab'))  # Should print False
+print(isAnagram('ab', 'a'))  # Should print False
+print(isAnagram('a', 'a'))  # Should print True
