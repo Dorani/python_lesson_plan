@@ -27,3 +27,7 @@ def getRow(rowIndex: int):
                 current[j] = previous[j - 1] + previous[j]
             previous = current 
         return previous
+print(getRow(3)) # [1,3,3,1]
+print(getRow(0)) # [1]
+print(getRow(1)) # [1,1]
+print(getRow(2)) # [1,2,1]
