@@ -20,7 +20,16 @@
 # ----------------------------------------------------------------
 # Frequency Counter Approach:
 
+def containsDuplicate(nums):
+    seen = {}
+    for val in nums:
+        if val in seen:
+            return True
+        seen[val] = 1
+    return False
 
+print(containsDuplicate([1, 2, 3, 4, 5]))
+# ----------------------------------------------------------------
 from collections import Counter
 
 def containsDuplicate(nums):
