@@ -1,6 +1,6 @@
 #length of a list
 
-basket = [1,2,3,4,5,5]
+basket = [1,2,3,4,5,5,6]
 
 print(len(basket))
 #add to the end of the list
@@ -18,7 +18,7 @@ new_list = basket.extend([100,101,102])
 basket.pop()
 
 #remove at an index
-basket.pop(0)
+basket.pop(3)
 
 #give it a value in the list
 basket.remove(4)

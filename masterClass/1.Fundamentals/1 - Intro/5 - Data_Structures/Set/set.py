@@ -1,4 +1,14 @@
 #Set unordered collection of unique items
+arr_dups = [1,2,3,4,5,5,5,5]
+
+#remove dups
+remove_dups_from_arr = set(arr_dups)
+print(remove_dups_from_arr)
+##output {1,2,3,4,5}
+
+
+
+
 
 my_set = {1,2,3,4,5,6,6,6}
 #wont add dups

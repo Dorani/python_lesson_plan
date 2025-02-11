@@ -12,12 +12,7 @@ print(li[0])
 
 
 #List Slicing:
-amazon_cart = [
-    'apples',
-    'banana',
-    'cuccumbers',
-    'ps5'
-]
+amazon_cart = ['apples','banana','cuccumbers','ps5']
 
 #Slice out sunglasses using :: or skip over an element
 print(amazon_cart[0::2])

@@ -23,7 +23,7 @@ print('Hello' + ' Seif/s')
 
 
 #Type conversion:
-a = str(100)
-b = int(a)
-c = type(b)
+a = str(100) #converts '100' to a string
+b = int(a) #converts 100 to an integer
+c = type(b) #returns the type of b INTEGER
 print(c)

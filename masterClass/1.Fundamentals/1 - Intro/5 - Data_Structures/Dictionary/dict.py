@@ -10,7 +10,7 @@ dictionary = {
 
 print(dictionary['b'])
 
-
+print
 
 #list of dicts
 my_list = [
