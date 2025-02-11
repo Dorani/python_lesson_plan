@@ -18,3 +18,7 @@ def strStr(haystack: str, needle: str) -> int:
 haystack = "sadbutsad"
 needle = "sad"
 print(strStr(haystack, needle))  # Output: 0
+
+haystack = "leetcode"
+needle = "leeto"
+print(strStr(haystack, needle))  # Output: -1
