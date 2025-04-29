@@ -1,4 +1,5 @@
 greet = "hellooooo"
+print(greet)
 print(greet[:])
 print(greet[0 :])
 print(greet[0 : 9])

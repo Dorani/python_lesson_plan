@@ -9,7 +9,7 @@ class PlayerCharacter:
        return 'run'
 
 
-player_1 = PlayerCharacter('seif', 33)
+player_1 = PlayerCharacter('seif', 38)
 
 print(player_1.name, player_1.age)
 

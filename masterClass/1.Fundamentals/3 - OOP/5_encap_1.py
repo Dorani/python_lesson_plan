@@ -1,4 +1,4 @@
-#Encapsulation - Biding of data and functions that manipulate that data, and encapsulate in 1 big object
+#Encapsulation - Binding of data and functions that manipulate that data, and encapsulate in 1 big object
 
 class PlayerCharacter:
     #class object attribute
