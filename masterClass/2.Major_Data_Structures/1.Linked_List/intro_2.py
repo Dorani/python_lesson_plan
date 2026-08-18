@@ -136,8 +136,9 @@ class LinkedList:
             before = temp  # Move 'before' to the current node
             temp = after  # Move 'temp' to the next node
 
-
+debugger = True  # This line is not necessary, but can be used for debugging purposes
 # Instantiate the LinkedList class with a starting value
+#Example usage of the LinkedList class
 my_linked_list = LinkedList(10)  # Linked list: 10
 
 # Print the list

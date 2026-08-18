@@ -16,4 +16,5 @@ import math
 decimal = 23.444
 rounded_down = math.floor(decimal)
 rounded_up = math.ceil(decimal)
-print(rounded)
+print(rounded_down)
+print(rounded_up)

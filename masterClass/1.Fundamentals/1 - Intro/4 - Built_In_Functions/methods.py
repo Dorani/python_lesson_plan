@@ -3,7 +3,7 @@ print(greet)
 print(greet[:])
 print(greet[0 :])
 print(greet[0 : 9])
-print(greet[0 :len(greet)])
+print(greet[0 :len(greet) - 1])  # will iterate through entire string
 # will iterate through entire string
 
 

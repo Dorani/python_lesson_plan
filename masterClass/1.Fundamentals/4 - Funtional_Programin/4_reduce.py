@@ -34,3 +34,15 @@ def accumulator(acc, item):
     return acc + item
 
 print(reduce(accumulator, (my_numbers + scores)))
+
+
+##give us an example of how to use reduce function to find the maximum number in a list
+from functools import reduce
+my_numbers = [1, 2, 3, 4, 5]
+scores = [73, 20, 65, 19, 76, 100, 88]
+# Find the maximum number using reduce      
+def find_max(acc, item):
+    return acc if acc > item else item
+
+
+print(reduce(find_max, (my_numbers + scores)))

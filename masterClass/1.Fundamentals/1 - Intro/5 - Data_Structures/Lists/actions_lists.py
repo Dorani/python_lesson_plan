@@ -13,46 +13,46 @@ basket.insert(1,100)
 
 #takes an iterable, ie a data structure you can loop over
 new_list = basket.extend([100,101,102])
-
+print(new_list)
 #removing, removes what is at the end of the list
-basket.pop()
+new_list.pop()
 
 #remove at an index
-basket.pop(3)
+new_list.pop(3)
 
 #give it a value in the list
-basket.remove(4)
+new_list.remove(4)
 
 
 #clear out the list
-basket.clear()
+new_list.clear()
 
 
 #what index is a certain element
-basket.index(3) #output 2
+new_list.index(3) #output 2
 
 #optional paramater, start looking, and end looking
-is_it_in_basket = print(3 in basket)
+is_it_in_basket = print(3 in new_list)
 
 #count how many times an item occurs
-basket.count(5)
+new_list.count(5)
 
 
 #sorting list
-basket.sort()
+new_list.sort()
 
 
-new_basket = basket[:] #or use copy, basket.copy()
+new_basket = new_list[:] #or use copy, basket.copy()
 new_basket.sort()
 print(new_basket)
 
 
 #reverse the list
-basket.reverse()
+new_list.reverse()
 
 
 
-#create a list ranged from 1-99
+#create a list ranged from 0-99
 print(list(range(100)))
 
 

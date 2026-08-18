@@ -7,7 +7,7 @@ for item in (1,2,3,4):
 for item in {1,2,3,4}:
     print(item)
 
-#nexted
+#nested
 for item in (1,2,3,4):
     for x in [5,6,7,8]:
         print(item,x)
