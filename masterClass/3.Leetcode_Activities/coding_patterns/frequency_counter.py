@@ -3,10 +3,26 @@
 
 #Given a list of words, return the frequency of each word.
 
-#words = ["ai", "ml", "ai", "rag", "ml", "ai"]
+words = ["ai", "ml", "ai", "rag", "ml", "ai"]
 
 def frequency(words):
     count = {}
     for word in words:
         count[word] = count.get(word, 0) + 1
     return count
+
+
+print(frequency(words))
+
+
+def frequency_2(words):
+    count = {}
+    
+    for word in words:
+        if word in count:
+            count[word] += 1
+        else:
+            count[word] = 1
+    return count
+
+print(frequency_2(words))
